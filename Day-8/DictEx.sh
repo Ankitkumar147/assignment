@@ -1,12 +1,15 @@
 #!/bin/bash -x
 
-count=0
+declare -A dice
+
+count=1
 
 while
-		[ $count -lt 6 ]
+		[ $count -le 6 ]
 do
-		(( count++ ))
-		echo "Roll-$count = $((RANDOM%6+1))"
+		echo "dice =$((RANDOM%6+1))"
+		((count++))
 done
+
 	echo "${dice[@]}"
 

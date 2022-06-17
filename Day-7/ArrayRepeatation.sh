@@ -9,5 +9,5 @@ do
 	((index++))
 	fi
 done
-echo "array is "
-echo ${array[@]}
+
+echo "array is ${array[@]}"
